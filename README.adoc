@@ -1,0 +1,38 @@
+= quarkus-archetype
+
+Build this archetype
+
+[source,bash]
+----
+mvn install
+----
+
+Look for `maven-gpg-plugin` in `pom.xml` if you like to upload to maven cental.
+
+== Build a project based on this archetype.
+
+*UI version*
+[source,bash]
+----
+mvn archetype:generate \
+    -DarchetypeGroupId=dk.jarry \
+    -DarchetypeArtifactId=quarkus-archetype
+----
+
+*Batch version*
+[source,bash]
+----
+mvn archetype:generate -o \
+    -DarchetypeGroupId=dk.jarry \
+    -DarchetypeArtifactId=quarkus-archetype \
+    -DarchetypeVersion=0.0.1-SNAPSHOT \
+    -Darchetype.interactive=false \
+    --batch-mode \
+    -Dversion=1.0.0-SNAPSHOT \
+    -DgroupId=GROUP_ID \
+    -DartifactId=PROJECT_NAME
+----
+
+== Inspiration
+
+https://github.com/AdamBien/quarkee-archetype

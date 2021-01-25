@@ -1,0 +1,21 @@
+= ${artifactId}
+
+== Maven
+
+Build and run in dev mode
+[source,bash]
+----
+./mvnw compile quarkus:dev
+----
+
+Build java version
+[source,bash]
+----
+./mvnw clean package
+----
+
+Build native version
+[source,bash]
+----
+./mvnw package -Pnative
+----
