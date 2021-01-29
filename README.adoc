@@ -7,7 +7,7 @@ Build this archetype
 mvn install
 ----
 
-Look for `maven-gpg-plugin` in `pom.xml` if you like to upload to maven cental.
+Look for `maven-gpg-plugin` in `pom.xml` if you like the code to be signed.
 
 == Build a project based on this archetype.
 
